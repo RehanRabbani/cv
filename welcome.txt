@@ -1,0 +1,11 @@
+<?php
+
+$username = $_REQUEST['username'];
+$email = $_REQUEST['email'];
+
+
+echo("username:" <br> . $username);
+echo("email:"  . $email);
+
+
+?>

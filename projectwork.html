@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+
+<style> 
+
+
+.th {
+
+    font-size: 30px;
+
+}
+
+
+
+
+.button1 {
+
+font-size: 20px;
+color: darkorange;
+background-color: darkred;
+border: solid 3px black;
+
+}
+
+
+.div3 {
+
+background-image: url("img1.jpg");
+background-size: 2000px 2000px;
+background-repeat: no-repeat;
+color: white;
+
+}
+
+
+.h1{
+
+font-size: 15px;
+color: darkorange;
+}
+
+.img {
+
+    border-radius: 100px;
+    background:darkblue;
+    padding: 20px; 
+    width: 200px;
+    height: 200px; 
+}
+
+
+.h{
+
+
+color: darkorange;
+}
+
+
+.div5 {
+
+background-image: url("img5.jpg");
+background-size: 2000px 2000px;
+background-repeat: no-repeat;
+color: white;
+
+}
+
+.img2 {
+
+    border-radius: 50%;
+    padding: 20px; 
+    width: 200px;
+    height: 200px; 
+}
+
+
+.table1 {
+
+ 
+  border-bottom: 6px solid red;
+    background-color: lightgrey;
+}
+
+
+</style> 
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+
+<div align="center" class="th table1"> 
+
+<table > 
+    
+    <tr> 
+<th width="200px">  <img  src="87.png" height="80px " width="150px">  </th>
+<th width="200px"> <a href="#" >   Home       </a> </th>
+<th width="200px"> <a href="#" >  Portfolio   </a> </th>
+<th width="200px"> <a href="#" >  Contacts    </a> </th>
+<th width="200px"> <a href="#" > Blog         </a> </th>
+</tr> 
+    
+</table>
+</div>
+
+</br> </br> </br> </br> </br> </br>
+
+
+
+
+<div class="w3-content w3-display-container" align="center">
+  <img class="mySlides" src="img6.jpg" style="width:50%">
+  <img class="mySlides" src="img7.jpg" style="width:50%">
+  <img class="mySlides" src="img8.jpeg" style="width:50%">
+  <img class="mySlides" src="img9.jpeg" style="width:50%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</br></br></br>
+
+
+
+
+
+
+
+
+
+<div class="div3"> 
+    
+    <br></br></br>
+    <h1 align="center"> Good Desighn is Good Buisness </h1>  </br>
+    <p align="center"> we provide all the facilites related to IT & </br>  Grpahics Designhing
+    skilled with fields in html , css and javascript </p> 
+
+</br> </bR> </br> </br> </br>
+
+    <div align="center" > <button  class="button1">  Learn more  </button> </div>
+    </br></br> </br> </br> 
+ </div>
+ 
+    </br> </br></br></br></br>
+
+
+     
+<div align="center" > 
+
+<button class="h1"> 
+<h1> Our services </h1> 
+</button>
+</br></br></br></br>
+
+
+
+<div> 
+<table>
+<tr> 
+ <td> <img  class="img" src="img2.jpg"> </img> <p> web desighning is the backbone </br> of current IT market </p>                </td> 
+ <td> <img  class="img" src="img3.png"> </img>  <p> graphics  desighning has a vast scope </br> and we are skilled in it  </p>   </td>  
+ <td> <img  class="img" src="img3.jpg"> </img>   <p> we do provide online shopping facilitie </br>while you are at home  </p>    </td> 
+ <td> <img  class="img" src="img4.jpg"> </img>  <p> social media is a platform for advertisments </br> nowadays clients are found through these </p>  </td> 
+</tr>
+</table>
+</div>
+</div>
+</br></br></br></bR></br>
+
+
+<div class="div5" align="center">
+
+<h1 class="h">  Our Awesome portfolio  </h1> 
+</br> </br></br>
+
+<table>
+<tr> 
+ <td> <img  class="img2"  src="portfolio1.jpg" > </img>  <h2> Yousuf Siddiqui  </h2>   </td> 
+ <td> <img  class="img2"  src="portfolio2.jpg">  </img>  <h2> Rehan Rabbani    </h2>   </td>  
+ <td> <img  class="img2"  src="portfolio3.jpg">  </img>  <h2> Muddabir Chohan  </h2>   </td> 
+ </tr>
+</table>
+</div>
+</br></br></br></br>
+
+
+<div align="center"> 
+    
+<button class="h1"> 
+<h1> Contact Us </h1> 
+</button>
+</br></br></br>    
+
+      
+<form class="six" action="welcome.php" method="post">
+  <fieldset>
+  
+    
+
+<label for="username">Username</label>
+<input class="six"  type="text" name="username" id="username"><br>
+<label for="email">Email id</label>
+<input class="six"  type="email" name="email" id="email"><br>
+<label for="m">Mobile No.</label>
+
+<input type="submit" >
+  
+</fieldset>
+</form>
+
+ 
+     </div> 
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+</script>
+
+</body>
+</html>
